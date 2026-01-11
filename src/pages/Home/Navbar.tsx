@@ -71,9 +71,16 @@ export const Navbar: React.FC = () => {
           </a>
         </div>
 
-        <div className={styles.supportButtonWrapper}>
+        <div className={styles.ButtonWrapper}>
           <a href="#patreon" className={styles.supportButton}>
             Support Us
+          </a>
+          <a
+            href="#europeanChampionhip"
+            className={styles.europeanChampionshipButton}
+          >
+            {/* <img src="/assets/eurochamp_logo.png" width="32px" /> */}
+            cEDH European Championship
           </a>
         </div>
         <div className={styles.langSwitch}>

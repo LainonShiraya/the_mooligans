@@ -100,3 +100,20 @@ color: white;
     color: #777;
   }
 }
+.ButtonWrapper{
+  display:flex;
+  flex-direction: row;
+  gap:1rem;
+}
+
+.europeanChampionshipButton{
+padding: 0.5rem 1rem;
+border-radius: 16px;
+font-weight: 700;
+text-decoration: none;
+background: rgb(30,41,59);
+color: white;
+  &:hover {
+    background: rgb(50, 74, 114);
+  }
+}

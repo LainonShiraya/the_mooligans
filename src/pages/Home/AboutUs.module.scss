@@ -85,3 +85,18 @@
   left: 60px;
   transform: rotate(-3deg);
 }
+
+.aboutWrapper{
+  padding: 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #07090d;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 3rem;
+  }
+}
