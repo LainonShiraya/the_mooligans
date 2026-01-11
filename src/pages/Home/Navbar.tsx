@@ -37,8 +37,11 @@ export const Navbar: React.FC = () => {
     <header className={styles.navbarWrapper}>
       <nav className={styles.navbar}>
         <div className={styles.leftLogo}>
-          <div className={styles.logoMark}></div>
-          <span className={styles.logoText}>The Mooligans</span>
+          <img
+            src="/assets/logo.png"
+            alt="Players at tournament"
+            width="164px"
+          />
         </div>
 
         <div className={styles.navLinks}>

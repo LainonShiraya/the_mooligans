@@ -7,7 +7,11 @@ const Hero: React.FC = () => {
     <div>
       <div className={styles.hero}>
         <div className={styles.left}>
-          <h1 className={styles.title}>THE MOOLIGANS</h1>
+          <img
+            src="/assets/logo.png"
+            alt="Players at tournament"
+            width="480px"
+          />
 
           <p className={styles.subtitle}>
             Competitive EDH tournaments across Poland
