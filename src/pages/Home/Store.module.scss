@@ -1,0 +1,73 @@
+.mission {
+  padding: 2rem 2rem;
+  text-align: center;
+  color: #f1f1f1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0f0f0f;
+
+  h1{
+    margin:0;
+    margin-bottom: 2rem;
+  }
+}
+
+.card {
+  min-width: 260px;
+  background: #111318;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2a2d34;
+  padding: 1rem;
+  &.ticket{
+    border: 2px solid gold;
+  }
+}
+
+.image {
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+
+  /* You can swap to city-specific later */
+  background-image: url("../../assets/mystery_box.jpg");
+}
+
+.body {
+  display:flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  h4 {
+    margin-bottom: 0.3rem;
+  }
+
+  p {
+    margin: 0.2rem;
+    color: #c9c9c9;
+    font-size: 0.9rem;
+  }
+}
+
+.button {
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.2s ease-in-out;
+  width: 6em;
+  text-align: center;
+  letter-spacing: 1px;
+  margin:auto;
+}
+
+.primary {
+  background: #b11226;
+  color: white;
+
+  &:hover {
+    background: #d01a32;
+  }
+}
