@@ -36,7 +36,10 @@ export const Navbar: React.FC = () => {
   return (
     <header className={styles.navbarWrapper}>
       <nav className={styles.navbar}>
-        <div className={styles.leftLogo}>
+        <div
+          className={styles.leftLogo}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <img
             src="/assets/logo.png"
             alt="Players at tournament"
