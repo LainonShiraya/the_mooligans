@@ -34,15 +34,15 @@ const Hero: React.FC = () => {
 
         <div className={styles.right}>
           <div className={`${styles.polaroid} ${styles.one}`}>
-            <img src="src/assets/photo_1.jpg" alt="polaroid 1" />
+            <img src="/assets/photo_1.jpg" alt="polaroid 1" />
           </div>
 
           <div className={`${styles.polaroid} ${styles.two}`}>
-            <img src="src/assets/photo_2.jpg" alt="polaroid 2" />
+            <img src="/assets/photo_2.jpg" alt="polaroid 2" />
           </div>
 
           <div className={`${styles.polaroid} ${styles.three}`}>
-            <img src="src/assets/photo_3.jpg" alt="polaroid 3" />
+            <img src="/assets/photo_3.jpg" alt="polaroid 3" />
           </div>
         </div>
       </div>

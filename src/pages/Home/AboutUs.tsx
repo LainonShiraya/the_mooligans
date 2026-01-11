@@ -30,13 +30,13 @@ export const AboutUs: React.FC = () => {
 
       <div className={styles.right}>
         <div className={`${styles.polaroid} ${styles.one}`}>
-          <img src="src\assets\photo_1.jpg" alt="Players at tournament" />
+          <img src="/assets/photo_1.jpg" alt="Players at tournament" />
         </div>
         <div className={`${styles.polaroid} ${styles.two}`}>
-          <img src="src\assets\photo_1.jpg" alt="Cards on table" />
+          <img src="/assets/photo_1.jpg" alt="Cards on table" />
         </div>
         <div className={`${styles.polaroid} ${styles.three}`}>
-          <img src="src\assets\photo_1.jpg" alt="Event room" />
+          <img src="/assets/photo_1.jpg" alt="Event room" />
         </div>
       </div>
     </section>
