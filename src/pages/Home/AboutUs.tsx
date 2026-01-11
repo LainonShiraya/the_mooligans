@@ -3,7 +3,7 @@ import styles from "./AboutUs.module.scss";
 
 export const AboutUs: React.FC = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <div className={styles.left}>
         <h1 className={styles.title}>About The Mooligans League</h1>
 

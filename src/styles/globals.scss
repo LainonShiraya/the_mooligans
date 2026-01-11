@@ -16,3 +16,16 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
+}

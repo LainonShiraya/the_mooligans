@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 2rem 3rem;
+  padding: 6rem 3rem;
   color: white;
   max-width:1600px;
   margin:auto;
@@ -17,7 +17,7 @@ h1 {
   gap: 3rem;
 
   @media (max-width: 1000px) {
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 }
 
@@ -42,21 +42,31 @@ h1 {
   &.ticket{
     border: 2px solid gold;
   }
+  &.placeholderCard {
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 22px;
+color: rgba(255, 255, 255, 0.65);
+font-style: italic;
+.button{
+  border: 2px solid red;
+}
+}
 }
 
 .image {
-  height: 140px;
+  height: 160px;
   background-size: cover;
   background-position: center;
-
+  border-radius: 0.8rem;
   /* You can swap to city-specific later */
   background-image: url("https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba");
 }
 
 .body {
-  display:flex;
+  text-align: center;
+  display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 1.3rem;
   h4 {
     margin-bottom: 0.3rem;
   }
@@ -70,12 +80,11 @@ h1 {
 
 .button {
   padding: 0.5rem 0.5rem;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
   transition: 0.2s ease-in-out;
-  width: 6em;
   text-align: center;
   letter-spacing: 1px;
 }

@@ -28,7 +28,7 @@ const RuleCard: React.FC<RuleCardProps> = ({ title, subtitle, children }) => {
 
 export const RulesPage: React.FC = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id="rules">
       <div className={styles.container}>
         <h1 className={styles.title}>Rules</h1>
         <p className={styles.lead}>

@@ -3,7 +3,7 @@ import styles from "./Store.module.scss";
 
 export const Store: React.FC = () => {
   return (
-    <section className={styles.mission}>
+    <section className={styles.mission} id="store">
       <h1 className={styles.text}>Pre Order</h1>
       <div className={styles.card}>
         <div className={styles.image} />

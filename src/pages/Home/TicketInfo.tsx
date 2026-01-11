@@ -3,7 +3,7 @@ import styles from "./TicketInfo.module.scss";
 
 export const TicketInfo: React.FC = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id="tickets">
       <div className={styles.container}>
         <h1 className={styles.title}>How to Get a Ticket</h1>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./UpcomingEvents.module.scss";
-
+import stylesPlaceholder from "./UpcomingEventPlaceholder.module.scss";
 const mockEvents = {
   warsaw: [
     {
@@ -17,35 +17,68 @@ const mockEvents = {
   ],
 };
 
-const CityRow = ({ name, events }: { name: string; events: any[] }) => (
-  <div className={styles.city}>
-    <h2>{name}</h2>
+const UpcomingEventPlaceholder: React.FC = () => {
+  return (
+    <div className={stylesPlaceholder.card}>
+      <div className={stylesPlaceholder.imageArea}>
+        <span className={stylesPlaceholder.question}>?</span>
+      </div>
 
-    <div className={styles.eventsRow}>
-      {events.map((e, i) => (
-        <div
-          className={`${styles.card} ${e.ticket ? styles.ticket : ""}`}
-          key={i}
-        >
-          <div className={styles.image} />
-          <div className={styles.body}>
-            <h4>{e.title}</h4>
-            <p>{e.date}</p>
-            <p>{e.venue}</p>
-            <a
-              className={`${styles.button} ${styles.primary}`}
-              href="https://discord.gg/P2DSgVGu"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Tickets
-            </a>
-          </div>
-        </div>
-      ))}
+      <div className={stylesPlaceholder.body}>
+        <h4 className={stylesPlaceholder.title}>
+          More tournaments coming soon
+        </h4>
+        <p className={stylesPlaceholder.subtitle}>To Be Added</p>
+
+        <button className={stylesPlaceholder.button} disabled>
+          Tickets Unavailable
+        </button>
+      </div>
+
+      <div className={stylesPlaceholder.overlay} />
     </div>
-  </div>
-);
+  );
+};
+
+const CityRow = ({ name, events }: { name: string; events: any[] }) => {
+  const normalizedEvents = [
+    ...events,
+    ...Array(Math.max(0, 4 - events.length)).fill(null),
+  ];
+  return (
+    <div className={styles.city}>
+      <h2>{name}</h2>
+
+      <div className={styles.eventsRow}>
+        {normalizedEvents.map((e, i) =>
+          e ? (
+            <div
+              className={`${styles.card} ${e.ticket ? styles.ticket : ""}`}
+              key={i}
+            >
+              <div className={styles.image} />
+              <div className={styles.body}>
+                <h4>{e.title}</h4>
+                <p>{e.date}</p>
+                <p>{e.venue}</p>
+                <a
+                  className={`${styles.button} ${styles.primary}`}
+                  href="https://discord.gg/P2DSgVGu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Tickets
+                </a>
+              </div>
+            </div>
+          ) : (
+            <UpcomingEventPlaceholder />
+          )
+        )}
+      </div>
+    </div>
+  );
+};
 
 export const UpcomingEvents: React.FC = () => {
   return (
