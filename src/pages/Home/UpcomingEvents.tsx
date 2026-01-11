@@ -58,9 +58,11 @@ const CityRow = ({ name, events }: { name: string; events: any[] }) => {
             >
               <div className={styles.image} />
               <div className={styles.body}>
-                <h4>{e.title}</h4>
+                <h3>{e.title}</h3>
                 <p>{e.date}</p>
-                <p>{e.venue}</p>
+                <p>
+                  <a href="#venuegooglemaps">{e.venue}</a>
+                </p>
                 <a
                   className={`${styles.button} ${styles.primary}`}
                   href="https://discord.gg/P2DSgVGu"

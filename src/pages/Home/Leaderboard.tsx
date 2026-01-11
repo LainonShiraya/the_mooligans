@@ -143,23 +143,23 @@ export const Leaderboard: React.FC = () => {
         </div>
         <div className={styles.underDevOverlay}>Under Development Feature</div>
       </div>
-
-      <div className={styles.rulesTextBlock}>
-        <p>
+      <h2>How it Works</h2>
+      <ul className={styles.list}>
+        <li>
           The leaderboard allows players to earn a qualification ticket. Tickets
           are awarded to the top-ranked player who currently does not possess a
           ticket.
-        </p>
-        <p>
-          If the highest-ranked player already owns a ticket, the reward will
-          pass down the ranking until an eligible player is found.
-        </p>
-        <p>The overall leaderboard winner will receive an additional prize.</p>
-        <p>
+        </li>
+        <li>
+          The overall leaderboard winner will receive an additional prize.
+        </li>
+        <li>
           The full scoring system and leaderboard structure will be announced in
           the future.
-        </p>
-      </div>
+        </li>
+        <li>Winning a ticket also earns an exclusive commemorative token.</li>
+        <li>Tickets are personal and cannot be transferred or sold.</li>
+      </ul>
     </section>
   );
 };

@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
   color: white;
    background: #0f0f0f;
 
@@ -15,7 +15,7 @@
 
 .title {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   text-align: center;
   font-family: 'UnifrakturCook', cursive; // your gothic / MTG vibe
 }
@@ -26,6 +26,10 @@
   margin: 0 auto 3rem auto;
   color: #d3d3d3;
   font-size: 1.2rem;
+    a{
+    color:rgb(79, 130, 218);
+    text-decoration: underline;
+  }
 }
 
 .content {
@@ -48,6 +52,10 @@
   li {
     margin-bottom: 0.6rem;
     line-height: 1.5;
+  }
+  a{
+    color:rgb(79, 130, 218);
+    text-decoration: underline;
   }
 }
 

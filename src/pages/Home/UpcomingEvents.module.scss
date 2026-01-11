@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 6rem 3rem;
+  padding: 2rem 3rem;
   color: white;
   max-width:1600px;
   margin:auto;
@@ -9,12 +9,14 @@ h1 {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2.4rem;
+  font-family: 'UnifrakturCook', cursive; // your gothic / MTG vibe
+
 }
 
 .grid {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 2rem;
 
   @media (max-width: 1000px) {
     grid-template-rows: 1fr;
@@ -22,7 +24,7 @@ h1 {
 }
 
 .city h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .eventsRow {
@@ -66,15 +68,17 @@ font-style: italic;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1.3rem;
-  h4 {
+  gap: 1.2rem;
+  h3 {
     margin-bottom: 0.3rem;
   }
-
   p {
     margin: 0.2rem;
     color: #c9c9c9;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    a {
+    color:rgb(79, 130, 218);
+  }
   }
 }
 

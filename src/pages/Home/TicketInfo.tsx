@@ -8,8 +8,10 @@ export const TicketInfo: React.FC = () => {
         <h1 className={styles.title}>How to Get a Ticket</h1>
 
         <p className={styles.lead}>
-          Tickets grant entry into our Seasonal Championship. You can earn them
-          by performing well in qualifying tournaments across Poland.
+          Tickets grant entry into{" "}
+          <a href="#europeanchampionship">cEDH European Championship </a>. You
+          can earn them by performing well in qualifying tournaments across
+          Poland.
         </p>
 
         <div className={styles.content}>
@@ -26,8 +28,12 @@ export const TicketInfo: React.FC = () => {
                 bracket (to next highest placement).
               </li>
               <li>
-                Ticket holders gain direct entry to the Seasonal Championship
-                event.
+                Ticket holders gain direct entry to the{" "}
+                <a href="#europeanchampionship">
+                  {" "}
+                  European Championship event{" "}
+                </a>
+                .
               </li>
               <li>
                 Winning a ticket also earns an exclusive commemorative token.
@@ -36,10 +42,10 @@ export const TicketInfo: React.FC = () => {
             </ul>
 
             <p className={styles.bodyText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              ornare ligula arcu, nec luctus diam facilisis non. Praesent eu
-              magna vitae velit hendrerit bibendum. Vestibulum ante ipsum primis
-              in faucibus orci luctus et ultrices posuere cubilia curae.
+              Tickets may be given to the smaller tournaments across the Poland
+              to support diffrent communities and there might be more than 10
+              tournaments this year. All information will be shown at this
+              website at the Events panel and the social medias.
             </p>
 
             <div className={styles.buttons}>
@@ -50,18 +56,25 @@ export const TicketInfo: React.FC = () => {
 
           <div className={styles.right}>
             <div className={styles.card}>
-              <h3>Season Qualifiers</h3>
+              <h3>Monthly Tournaments</h3>
               <p>Compete in events across Warsaw, Kraków and Poznań.</p>
             </div>
 
             <div className={styles.card}>
-              <h3>Championship Ticket</h3>
-              <p>Earn your place at the Seasonal Championship.</p>
+              <h3>Leaderboard</h3>
+              <p>
+                Consistency matters, earn your place at the Seasonal
+                Championship.
+              </p>
             </div>
 
             <div className={styles.card}>
-              <h3>Exclusive Token</h3>
-              <p>Winners receive a limited-edition event token.</p>
+              <h3>Every win counts</h3>
+              <p>
+                {" "}
+                The chance to buy a ticket is passed down to first player at the
+                standing without a ticket.
+              </p>
             </div>
           </div>
         </div>

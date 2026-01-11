@@ -8,6 +8,7 @@ import { TicketInfo } from "./TicketInfo";
 import { RulesPage } from "./RulePage";
 import { Navbar } from "./Navbar";
 import { Leaderboard } from "./Leaderboard";
+
 export default function Home() {
   return (
     <div className="backgroundTexture">

@@ -5,7 +5,9 @@ import { useTranslation } from "../../i18n/useTranslation";
 type Language = "pl" | "en";
 
 export const Navbar: React.FC = () => {
-  const [lang, setLang] = useState<Language>("en");
+  const [lang, setLang] = useState<Language>(
+    (localStorage.getItem("the_mooligans_lang") as Language) || "pl"
+  );
   const { t } = useTranslation();
 
   const handleLanguageChange = (newLang: Language) => {

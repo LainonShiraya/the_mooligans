@@ -1,14 +1,20 @@
 .leaderboardSection {
 max-width: 1200px;
-margin: 4rem auto 0 auto;
+margin: 2rem auto 2rem auto;
 padding: 1rem 0rem;
 color: #fff;
+h1{
+    font-family: 'UnifrakturCook', cursive;
+    margin:0.25rem;
 }
-
+}
+h2{
+  margin-block:2rem;
+}
 
 .sectionSubtitle {
 color: rgba(255, 255, 255, 0.6);
-margin-bottom: 1.25rem;
+margin-bottom: 1.2rem;
 }
 
 
@@ -80,4 +86,17 @@ color: rgba(255, 255, 255, 0.75);
   margin: 0 auto 3rem auto;
   color: #d3d3d3;
   font-size: 1.2rem;
+}
+
+.list {
+  margin-bottom: 2rem;
+
+  li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+  }
+  a{
+    color:rgb(79, 130, 218);
+    text-decoration: underline;
+  }
 }

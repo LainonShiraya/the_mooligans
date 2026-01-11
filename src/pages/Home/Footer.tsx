@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss";
 export const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <h3>Our Partners & Sponsors</h3>
+      <h2>Our Partners & Sponsors</h2>
 
       <div className={styles.logoGrid}>
         <img src="/assets/sponsor_1.png" alt="Sponsor 1" />

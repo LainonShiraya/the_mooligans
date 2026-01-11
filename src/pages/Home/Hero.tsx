@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           <img
             src="/assets/logo.png"
             alt="Players at tournament"
-            width="480px"
+            width="580px"
           />
 
           <p className={styles.subtitle}>

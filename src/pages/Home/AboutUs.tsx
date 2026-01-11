@@ -9,7 +9,7 @@ interface Person {
   facebook?: string; // optional Facebook link
 }
 
-const people: Person[] = [
+const organizers: Person[] = [
   {
     name: "Tomi Lachowski",
     city: "Warszawa",
@@ -34,24 +34,26 @@ const people: Person[] = [
 ];
 const PhotoGrid: React.FC = () => {
   return (
-    <div className={styles.TOgridContainer}>
-      {people.map((person, index) => (
-        <div key={index} className={styles.TOpolaroid}>
-          <img src={person.photo} alt={person.name} />
-          <div className={styles.caption}>
-            <h3>{person.name}</h3>
-            <h4>{person.city}</h4>
-            <p>{person.desc}</p>
-            {person.facebook && (
-              <a
-                href={person.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.contactLink}
-              >
-                Facebook Profile
-              </a>
-            )}
+    <div className={styles.grid}>
+      {organizers.map((o, i) => (
+        <div className={styles.card} key={i}>
+          <div className={styles.photoWrapper}>
+            <img src={o.photo} alt={o.name} className={styles.photo} />
+          </div>
+
+          <div className={styles.body}>
+            <h3 className={styles.name}>{o.name}</h3>
+            <p className={styles.city}>{o.city}</p>
+            <p className={styles.desc}>{o.desc}</p>
+
+            <a
+              className={styles.link}
+              href={o.facebook}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Contact on Facebook
+            </a>
           </div>
         </div>
       ))}
