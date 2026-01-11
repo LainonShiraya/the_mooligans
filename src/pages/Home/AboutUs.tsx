@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./AboutUs.module.scss";
-import stylesTO from "./stylesTO.module.scss";
 
 interface Person {
   name: string;
@@ -35,11 +34,11 @@ const people: Person[] = [
 ];
 const PhotoGrid: React.FC = () => {
   return (
-    <div className={stylesTO.gridContainer}>
+    <div className={styles.gridContainer}>
       {people.map((person, index) => (
-        <div key={index} className={stylesTO.polaroid}>
+        <div key={index} className={styles.polaroid}>
           <img src={person.photo} alt={person.name} />
-          <div className={stylesTO.caption}>
+          <div className={styles.caption}>
             <h3>{person.name}</h3>
             <h4>{person.city}</h4>
             <p>{person.desc}</p>
@@ -48,7 +47,7 @@ const PhotoGrid: React.FC = () => {
                 href={person.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={stylesTO.contactLink}
+                className={styles.contactLink}
               >
                 Facebook Profile
               </a>
