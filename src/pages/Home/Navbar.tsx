@@ -1,6 +1,17 @@
+import { useState } from "react";
 import styles from "./Navbar.module.scss";
+import { useTranslation } from "../../i18n/useTranslation";
+
+type Language = "pl" | "en";
 
 export const Navbar: React.FC = () => {
+  const [lang, setLang] = useState<Language>("en");
+  const { t } = useTranslation();
+
+  const handleLanguageChange = (newLang: Language) => {
+    setLang(newLang);
+    localStorage.setItem("the_mooligans_lang", newLang);
+  };
   const handleScrollTo = (
     id: string,
     e?: React.MouseEvent<HTMLAnchorElement>
@@ -32,25 +43,25 @@ export const Navbar: React.FC = () => {
 
         <div className={styles.navLinks}>
           <a href="#events" onClick={() => handleScrollTo("events")}>
-            Events
+            {t.navbar.events}
           </a>
           <a href="#store" onClick={(e) => handleScrollTo("store", e)}>
-            Store
+            {t.navbar.store}
           </a>
           <a href="#about" onClick={(e) => handleScrollTo("about", e)}>
-            About Us
+            {t.navbar.about}
           </a>
           <a href="#tickets" onClick={(e) => handleScrollTo("tickets", e)}>
-            Tickets
+            {t.navbar.tickets}
           </a>
           <a href="#rules" onClick={() => handleScrollTo("rules")}>
-            Rules
+            {t.navbar.rules}
           </a>
           <a
             href="#leaderboard"
             onClick={(e) => handleScrollTo("leaderboard", e)}
           >
-            Leaderboard
+            {t.navbar.leaderboard}
           </a>
         </div>
 
@@ -58,6 +69,23 @@ export const Navbar: React.FC = () => {
           <a href="#patreon" className={styles.supportButton}>
             Support Us
           </a>
+        </div>
+        <div className={styles.langSwitch}>
+          <button
+            className={lang === "pl" ? styles.active : ""}
+            onClick={() => handleLanguageChange("pl")}
+          >
+            PL
+          </button>
+
+          <span className={styles.separator}>/</span>
+
+          <button
+            className={lang === "en" ? styles.active : ""}
+            onClick={() => handleLanguageChange("en")}
+          >
+            ENG
+          </button>
         </div>
       </nav>
     </header>
