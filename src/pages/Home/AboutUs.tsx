@@ -34,9 +34,9 @@ const people: Person[] = [
 ];
 const PhotoGrid: React.FC = () => {
   return (
-    <div className={styles.gridContainer}>
+    <div className={styles.TOgridContainer}>
       {people.map((person, index) => (
-        <div key={index} className={styles.polaroid}>
+        <div key={index} className={styles.TOpolaroid}>
           <img src={person.photo} alt={person.name} />
           <div className={styles.caption}>
             <h3>{person.name}</h3>

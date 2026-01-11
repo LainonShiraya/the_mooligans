@@ -103,14 +103,14 @@
 
 
 ////////////////// STYLES TO //////////
- .gridContainer {
+ .TOgridContainer {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   flex-wrap: wrap; // allow wrapping on smaller screens
   justify-content: center;
 }
-.polaroid {
+.TOpolaroid {
   text-align: center;
   padding: 0.5rem;
   border-radius: 6px;
