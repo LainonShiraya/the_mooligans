@@ -65,7 +65,7 @@ export const AboutUs: React.FC = () => {
     <section className={styles.aboutWrapper} id="about">
       <div className={styles.about}>
         <div className={styles.left}>
-          <h1 className={styles.title}>Meet tournament organizators</h1>
+          <h2 className={styles.title}>Meet tournament organizators</h2>
 
           <p className={styles.subtitle}>
             Organizing competitive EDH tournaments across Poland.

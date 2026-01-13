@@ -7,7 +7,7 @@
   padding: 3rem 5rem;
 
   /* move content slightly inward */
-  gap: 10rem; // <--- adds ~10rem visual pull to center
+  gap: 5rem; // <--- adds ~10rem visual pull to center
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -19,6 +19,13 @@
 
 .left {
   max-width: 540px;
+  span {
+    width:100%;
+  display: inline-flex;
+  align-items: center;      /* vertical centering */
+  justify-content: left;  /* horizontal centering if span has width */
+  gap: 0.5rem;
+  }
 }
 
 .title {
@@ -27,6 +34,7 @@
   letter-spacing: 2px;
   margin-bottom: 1rem;
   text-align: left;
+  font-size:5rem;
 }
 
 .subtitle {
@@ -88,7 +96,7 @@
 
 .polaroid {
   position: absolute;
-  width: 260px;
+  width: 280px;
   height: 290px;
   padding: 10px;
   background: #fafafa;
