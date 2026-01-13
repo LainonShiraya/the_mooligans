@@ -4,13 +4,13 @@ import { MissionSection } from "./MissionSection";
 
 const Hero: React.FC = () => {
   return (
-    <div>
+    <div className={styles.backgroundImage}>
       <div className={styles.hero}>
         <div className={styles.left}>
-          <h1 className={styles.title}>cEDH Poland Championship</h1>
+          <h1 className={styles.title}>Polish cEDH Championship</h1>
           <span>
             {" "}
-            via{" "}
+            by{" "}
             <img
               src="/assets/logo.png"
               alt="Players at tournament"

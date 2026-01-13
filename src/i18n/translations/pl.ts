@@ -5,7 +5,7 @@ export const pl = {
     about: "O nas",
     tickets: "Bilety",
     rules: "Zasady",
-    leaderboard: "Tabela sezonu",
+    leaderboard: "Leaderboard",
   },
   hero: {
     title: "Turnieje cEDH w całej Polsce",
