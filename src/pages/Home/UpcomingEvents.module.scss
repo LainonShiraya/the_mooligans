@@ -26,12 +26,18 @@ h1 {
 .city h2 {
   margin-bottom: 1.2rem;
 }
-
+.city{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
 .eventsRow {
   display: flex;
   gap: 1.5rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
+  justify-content: center;
 }
 
 .card {
@@ -73,9 +79,9 @@ font-style: italic;
     margin-bottom: 0.3rem;
   }
   p {
-    margin: 0.2rem;
+    margin: 0.1rem;
     color: #c9c9c9;
-    font-size: 1rem;
+    font-size: 1.2rem;
     a {
     color:rgb(79, 130, 218);
   }
@@ -100,4 +106,16 @@ font-style: italic;
   &:hover {
     background: #d01a32;
   }
+}
+.venue{
+  background-color:rgb(30, 41, 59);
+  &:hover {
+    background: rgb(50, 74, 114);
+  }
+}
+
+.buttonGroup{
+  display:flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }

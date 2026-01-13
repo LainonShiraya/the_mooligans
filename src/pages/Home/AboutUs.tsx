@@ -65,27 +65,34 @@ export const AboutUs: React.FC = () => {
     <section className={styles.aboutWrapper} id="about">
       <div className={styles.about}>
         <div className={styles.left}>
-          <h2 className={styles.title}>Meet tournament organizators</h2>
+          <h2 className={styles.title}>Meet tournament organizers</h2>
 
           <p className={styles.subtitle}>
-            Organizing competitive EDH tournaments across Poland.
+            We are a group of Magic: The Gathering enthusiasts that have been
+            involved in the competitive scene since early 2000'.
           </p>
 
           <div className={styles.textBlock}>
             <p>
-              We are a group of cEDH enthusiasts dedicated to building a
-              competitive, inclusive and high-quality tournament scene in
-              Poland.
+              With raising popularity of Competitive Commander format among
+              local playgroups we decided to unify Polish community and create
+              inclusive and high-quality tournament scene in Poland.
             </p>
             <p>
               Our events are regularly held in Warsaw, Kraków and Poznań,
-              supporting both local stores and the broader Commander community.
+              supporting LGS's and increasing awareness of the format in broader
+              M:TG community.
             </p>
             <p>
-              We believe competitive play can still be social, friendly and
-              welcoming — and we aim to showcase cEDH as the deepest multiplayer
-              format Magic has to offer.
+              We believe that competitive play can be social, friendly and
+              welcoming.
             </p>
+            <p>
+              "One's ability to play the game shouldn't be measured by his
+              ability to buy the cards, rather the skill and experience they are
+              bringing to the table"
+            </p>
+            <p>Although Foiled out decks shuffle better ;)</p>
           </div>
         </div>
         <div className={styles.right}>

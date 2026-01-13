@@ -43,7 +43,7 @@ const UpcomingEventPlaceholder: React.FC = () => {
 const CityRow = ({ name, events }: { name: string; events: any[] }) => {
   const normalizedEvents = [
     ...events,
-    ...Array(Math.max(0, 4 - events.length)).fill(null),
+    ...Array(Math.max(0, 3 - events.length)).fill(null),
   ];
   return (
     <div className={styles.city}>
@@ -60,17 +60,27 @@ const CityRow = ({ name, events }: { name: string; events: any[] }) => {
               <div className={styles.body}>
                 <h3>{e.title}</h3>
                 <p>{e.date}</p>
-                <p>
+                {/* <p>
                   <a href="#venuegooglemaps">{e.venue}</a>
-                </p>
-                <a
-                  className={`${styles.button} ${styles.primary}`}
-                  href="https://discord.gg/P2DSgVGu"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Tickets
-                </a>
+                </p> */}
+                <div className={styles.buttonGroup}>
+                  <a
+                    className={`${styles.button} ${styles.primary} ${styles.venue}`}
+                    href="https://discord.gg/P2DSgVGu"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {e.venue}
+                  </a>
+                  <a
+                    className={`${styles.button} ${styles.primary}`}
+                    href="https://discord.gg/P2DSgVGu"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Tickets
+                  </a>
+                </div>
               </div>
             </div>
           ) : (
