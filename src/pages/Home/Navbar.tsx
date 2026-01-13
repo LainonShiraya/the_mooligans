@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
           className={styles.leftLogo}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          cEDH Poland
+          <h4>cEDH Poland</h4>
         </div>
 
         <div className={styles.navLinks}>

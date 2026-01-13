@@ -28,8 +28,9 @@ const UpcomingEventPlaceholder: React.FC = () => {
         <h4 className={stylesPlaceholder.title}>
           More tournaments coming soon
         </h4>
-        <p className={stylesPlaceholder.subtitle}>To Be Added</p>
-
+        <button className={stylesPlaceholder.button} disabled>
+          To Be Added
+        </button>
         <button className={stylesPlaceholder.button} disabled>
           Tickets Unavailable
         </button>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -29,3 +30,10 @@ main {
 section {
   scroll-snap-align: center;
 }
+
+h1,h2,h3,h4,h5{
+  font-family: "Inter", "Cinzel", serif;
+  margin-top:0;
+}
+
+    // font-family: 'UnifrakturCook', cursive; // your gothic / MTG vibe

@@ -143,23 +143,25 @@ export const Leaderboard: React.FC = () => {
         </div>
         <div className={styles.underDevOverlay}>Under Development Feature</div>
       </div>
-      <h2>How it Works</h2>
-      <ul className={styles.list}>
-        <li>
-          The leaderboard allows players to earn a qualification ticket. Tickets
-          are awarded to the top-ranked player who currently does not possess a
-          ticket.
-        </li>
-        <li>
-          The overall leaderboard winner will receive an additional prize.
-        </li>
-        <li>
-          The full scoring system and leaderboard structure will be announced in
-          the future.
-        </li>
-        <li>Winning a ticket also earns an exclusive commemorative token.</li>
-        <li>Tickets are personal and cannot be transferred or sold.</li>
-      </ul>
+      <div className={styles.explaination}>
+        <h2>How it Works</h2>
+        <ul className={styles.list}>
+          <li>
+            The leaderboard allows players to earn a qualification ticket.
+            Tickets are awarded to the top-ranked player who currently does not
+            possess a ticket.
+          </li>
+          <li>
+            The overall leaderboard winner will receive an additional prize.
+          </li>
+          <li>
+            The full scoring system and leaderboard structure will be announced
+            in the future.
+          </li>
+          <li>Winning a ticket also earns an exclusive commemorative token.</li>
+          <li>Tickets are personal and cannot be transferred or sold.</li>
+        </ul>
+      </div>
     </section>
   );
 };
