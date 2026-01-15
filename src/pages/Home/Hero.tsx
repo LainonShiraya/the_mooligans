@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <div className={styles.backgroundImage}>
       <div className={styles.hero}>
         <div className={styles.left}>
-          <h1 className={styles.title}>Polish cEDH Championship</h1>
+          <h1 className={styles.title}>Polish cEDH HUB</h1>
           <span>
             {" "}
             by{" "}

@@ -74,8 +74,9 @@ export const Navbar: React.FC = () => {
             Support Us
           </a>
           <a
-            href="#europeanChampionhip"
+            href="https://www.cedheurope.com"
             className={styles.europeanChampionshipButton}
+            target="_blank"
           >
             {/* <img src="/assets/eurochamp_logo.png" width="32px" /> */}
             cEDH European Championship

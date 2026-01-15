@@ -9,7 +9,10 @@ export const TicketInfo: React.FC = () => {
 
         <p className={styles.lead}>
           Tickets earned during the regular cEDH Poland season grant entry into{" "}
-          <a href="#europeanchampionship">cEDH European Championship </a>.
+          <a href="https://www.cedheurope.com" target="_blank">
+            cEDH European Championship{" "}
+          </a>
+          .
         </p>
         <div className={styles.content}>
           <div className={styles.left}>
