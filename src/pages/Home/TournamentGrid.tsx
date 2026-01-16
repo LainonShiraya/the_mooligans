@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TournamentCard from "./TournamentCard";
 import styles from "./TournamentGrid.module.scss";
+import { getTournaments } from "../../services/tournaments";
 type Tournament = {
   id: string;
   title: string;
@@ -13,9 +14,7 @@ type Tournament = {
   ticketsUrl?: string;
   detailsUrl: string;
 };
-type Props = {
-  tournaments: Tournament[];
-};
+
 type Props2 = {
   city: string;
   cities: string[];
@@ -55,7 +54,15 @@ export const TournamentFilters = ({
     </div>
   );
 };
-const TournamentGrid = ({ tournaments }: Props) => {
+const TournamentGrid = () => {
+  const [tournaments, setTournaments] = useState<Tournament[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getTournaments()
+      .then(setTournaments)
+      .finally(() => setLoading(false));
+  }, []);
   const [city, setCity] = useState("all");
   const [ticketOnly, setTicketOnly] = useState(false);
 
@@ -67,6 +74,7 @@ const TournamentGrid = ({ tournaments }: Props) => {
     return true;
   });
 
+  if (loading) return <p>Loading tournaments...</p>;
   return (
     <section className={styles.wrapper} id="#events">
       <h1 className={styles.title}>Upcoming Tournaments</h1>

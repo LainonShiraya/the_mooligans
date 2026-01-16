@@ -1,7 +1,3 @@
-// .backgroundImage{
-//   background-image:  url("../../assets/mata.png");
-//   padding: 5rem 10rem;
-// }
 .hero {
   min-height: 83vh;
   color: #ffffff;
@@ -17,10 +13,8 @@
     text-align: center;
     gap: 3rem;
   }
-    padding: 3rem 5rem;
-
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/mata.png");
-    background-size: cover;      /* fill container */
+  padding: 3rem 5rem;
+  background-size: cover;      /* fill container */
   background-position: top;    /* anchor to top */
   background-repeat: no-repeat;
 }

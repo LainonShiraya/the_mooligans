@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import { MissionSection } from "./MissionSection";
+import { getHeroBackground } from "../../services/siteVisuals";
 
 const Hero: React.FC = () => {
+  const [bg, setBg] = useState<string | null>(null);
+
+  useEffect(() => {
+    getHeroBackground().then(setBg);
+  }, []);
+
   return (
-    <div className={styles.backgroundImage}>
+    <div
+      className={styles.backgroundImage}
+      style={{
+        backgroundImage: bg
+          ? `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(${bg})`
+          : `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))`,
+      }}
+    >
       <div className={styles.hero}>
         <div className={styles.left}>
           <h1 className={styles.title}>Polish cEDH HUB</h1>

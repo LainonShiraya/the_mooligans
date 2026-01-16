@@ -31,7 +31,7 @@ const TournamentCard = ({ tournament }: Props) => {
       </div>
 
       <div className={styles.body}>
-        <h3>{tournament.title}</h3>
+        <h2>{tournament.title}</h2>
         <div className={styles.separator}>
           <p className={styles.date}>📍 {tournament.date}</p>
 
