@@ -3,6 +3,7 @@ max-width: 1200px;
 margin: 2rem auto 2rem auto;
 padding: 1rem 0rem;
 color: #fff;
+text-align: center;
 h1{
     margin:0.25rem;
 }
@@ -28,6 +29,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 24px;
 padding: 1rem;
 overflow-x: auto;
+
 }
 
 
@@ -93,6 +95,7 @@ color: rgba(255, 255, 255, 0.75);
   li {
     margin-bottom: 0.6rem;
     line-height: 1.5;
+    text-align: left;
   }
   a{
     color:rgb(79, 130, 218);

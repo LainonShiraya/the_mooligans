@@ -33,6 +33,8 @@ export const RulesPage: React.FC = () => {
         <h1 className={styles.title}>Rules</h1>
         <p className={styles.lead}>
           Official tournament rules and guidelines for cEDH events in Poland.
+          These rules are applicable to all cEDH European Championship Qualifier
+          events across Europe.
         </p>
 
         <div className={styles.warning}>
@@ -44,12 +46,12 @@ export const RulesPage: React.FC = () => {
         <div className={styles.cards}>
           <RuleCard
             title="Tournament Structure & Time Rules"
-            subtitle="Rounds, time limits and slow play policy"
+            subtitle="Number of rounds, time limits and play policy"
           >
             <p>
-              Events are typically run using Swiss rounds followed by a Top 4 or
-              Top 16 cut depending on event size. Round pairings are random and
-              based on points earned during the event.
+              Events are typically run using Swiss rounds followed by a top cut
+              (4/8/10/16), depending on event size. Round pairings are random
+              and based on points earned during the event.
             </p>
 
             <ul>
@@ -66,8 +68,8 @@ export const RulesPage: React.FC = () => {
 
             <p>
               Additional rules on turn order, extra turns and end-of-round
-              procedures follow Competitive REL guidance unless otherwise noted
-              by organizer announcement.
+              procedures follow Competitive REL guidance with the Multiplayer
+              Addendum guidance which can be found here.
             </p>
           </RuleCard>
 
@@ -95,9 +97,9 @@ export const RulesPage: React.FC = () => {
             </ul>
 
             <p>
-              Store-specific events may follow different proxy policies based on
-              local guidelines; players are responsible for checking event
-              listings before attending.
+              If a player is unsure about the legality of their deck, please
+              reach out to one of the judges or TOs before the tournament for a
+              quick deck check.
             </p>
           </RuleCard>
 

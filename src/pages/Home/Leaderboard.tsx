@@ -107,9 +107,10 @@ const mockPlayers: PlayerRow[] = [
 export const Leaderboard: React.FC = () => {
   return (
     <section id="leaderboard" className={styles.leaderboardSection}>
-      <h1>Leaderboard</h1>
+      <h1>Season Leaderboard</h1>
       <p className={styles.lead}>
-        Tracking performance across cEDH tournaments in Poland
+        Tracking player performance across EU Championship Qualifier tournaments
+        in Poland
       </p>
 
       <div className={styles.tableWrapper}>
@@ -141,25 +142,29 @@ export const Leaderboard: React.FC = () => {
             </tbody>
           </table>
         </div>
-        <div className={styles.underDevOverlay}>Under Development Feature</div>
+        <div className={styles.underDevOverlay}>Feature under development</div>
       </div>
       <div className={styles.explaination}>
         <h2>How it Works</h2>
         <ul className={styles.list}>
           <li>
-            The leaderboard allows players to earn a qualification ticket.
-            Tickets are awarded to the top-ranked player who currently does not
-            possess a ticket.
+            The leaderboard will allow players to compete for a qualification
+            ticket. Tickets will be awarded to the top ranked player, who
+            currently does not possess one.
           </li>
           <li>
-            The overall leaderboard winner will receive an additional prize.
+            The overall leaderboard winner, will receive an additional price
+            (TBA)
           </li>
           <li>
             The full scoring system and leaderboard structure will be announced
-            in the future.
+            in the near future.
           </li>
-          <li>Winning a ticket also earns an exclusive commemorative token.</li>
-          <li>Tickets are personal and cannot be transferred or sold.</li>
+          <li>Season winner will receive an exclusive commemorative token.</li>
+          <li>
+            {" "}
+            <b>Tickets cannot be sold or transferred.</b>
+          </li>
         </ul>
       </div>
     </section>

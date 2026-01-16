@@ -76,8 +76,8 @@ export const TicketInfo: React.FC = () => {
               <h3>Every win counts</h3>
               <p>
                 {" "}
-                The chance to buy a ticket is passed down to first player at the
-                standing without a ticket.
+                The chance to buy a ticket is passed down to the next player in
+                the tournament standing without a ticket.
               </p>
             </div>
           </div>
