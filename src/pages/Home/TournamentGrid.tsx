@@ -68,7 +68,7 @@ const TournamentGrid = ({ tournaments }: Props) => {
   });
 
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id="#events">
       <h1 className={styles.title}>Upcoming Tournaments</h1>
       <p className={styles.lead}>
         Competitive EDH events across Poland. Battle for tickets, prizes, and
