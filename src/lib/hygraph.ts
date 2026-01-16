@@ -1,4 +1,4 @@
-const HYGRAPH_ENDPOINT = import.meta.env.VITE_HYGRAPH_ENDPOINT;
+const HYGRAPH_ENDPOINT = import.meta.env.HYGRAPH_ENDPOINT;
 
 export async function fetchHygraph<T>(
   query: string,
