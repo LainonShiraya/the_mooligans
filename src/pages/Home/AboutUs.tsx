@@ -95,7 +95,7 @@ export const AboutUs: React.FC = () => {
             <p>Although Foiled out decks shuffle better ;)</p>
           </div>
         </div>
-        <div className={styles.right}>
+        {/* <div className={styles.right}>
           <div className={`${styles.polaroid} ${styles.one}`}>
             <img src="/assets/photo_1.jpg" alt="Players at tournament" />
           </div>
@@ -105,7 +105,7 @@ export const AboutUs: React.FC = () => {
           <div className={`${styles.polaroid} ${styles.three}`}>
             <img src="/assets/photo_1.jpg" alt="Event room" />
           </div>
-        </div>
+        </div> */}
       </div>
       <PhotoGrid />
     </section>

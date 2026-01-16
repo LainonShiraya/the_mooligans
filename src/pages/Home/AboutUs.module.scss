@@ -28,11 +28,13 @@
   font-size: 1.3rem;
   margin-bottom: 2rem;
   color: #cfcfcf;
+  text-align: center;
 }
 
 .textBlock {
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 1rem;
 
   p {

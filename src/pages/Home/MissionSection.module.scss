@@ -13,4 +13,10 @@
   font-size: 1.3rem;
   line-height: 1.2;
   font-weight: 500;
+      @media (max-width: 1200px) {
+     font-size: 1rem;
+  }
+    @media (max-width: 900px) {
+     font-size: 0.8rem;
+  }
 }

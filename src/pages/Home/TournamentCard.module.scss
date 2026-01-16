@@ -71,8 +71,17 @@
 .primary {
   background: linear-gradient(135deg, #d4af37, #ffcc66);
   color: #111;
+  &:hover{
+    background: linear-gradient(135deg, #ecd68c, #fada9b);
+  }
 }
-
+  .red{
+  background: #b11226 !important;
+  color: white;
+  &:hover {
+    background: #d01a32 !important;
+  }
+  }
 /* improved details button */
 .secondary {
   background: transparent;

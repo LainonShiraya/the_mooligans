@@ -55,7 +55,9 @@ const TournamentCard = ({ tournament }: Props) => {
                 Tickets
               </a>
             ) : (
-              <button className={styles.button} disabled>
+              <button
+                className={`${styles.button} ${styles.primary} ${styles.red}`}
+              >
                 Tickets
               </button>
             )}

@@ -5,6 +5,10 @@ export const Store: React.FC = () => {
   return (
     <section className={styles.mission} id="store">
       <h1 className={styles.text}>Pre Order</h1>
+      <p className={styles.lead}>
+        Want to support the community? Pre-orders help us organize better events
+        for everyone.
+      </p>
       <div className={styles.card}>
         <div className={styles.image} />
         <div className={styles.body}>

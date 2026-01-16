@@ -9,8 +9,9 @@
   background: #0f0f0f;
 
   h1{
-    margin:0;
-    margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  text-align: center;
   }
 }
 
@@ -20,7 +21,7 @@
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #2a2d34;
-  padding: 1rem;
+  padding-bottom: 1rem;
   &.ticket{
     border: 2px solid gold;
   }
@@ -41,6 +42,8 @@
   gap: 0.2rem;
   h4 {
     margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+
   }
 
   p {
@@ -69,5 +72,16 @@
 
   &:hover {
     background: #d01a32;
+  }
+}
+.lead {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  color: #d3d3d3;
+  font-size: 1.2rem;
+    a{
+    color:rgb(79, 130, 218);
+    text-decoration: underline;
   }
 }

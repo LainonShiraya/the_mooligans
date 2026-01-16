@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className={styles.right}>
+        {/* <div className={styles.right}>
           <div className={`${styles.polaroid} ${styles.one}`}>
             <img src="/assets/photo_1.jpg" alt="polaroid 1" />
           </div>
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
           <div className={`${styles.polaroid} ${styles.three}`}>
             <img src="/assets/photo_3.jpg" alt="polaroid 3" />
           </div>
-        </div>
+        </div> */}
       </div>
       <MissionSection />
     </div>
