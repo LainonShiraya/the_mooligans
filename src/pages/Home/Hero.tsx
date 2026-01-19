@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
           <div className={styles.buttons}>
             <a
               className={`${styles.button} ${styles.primary}`}
-              href="https://discord.gg/P2DSgVGu"
+              href="https://discord.gg/GVkKr2Tq3j"
               target="_blank"
               rel="noreferrer"
             >

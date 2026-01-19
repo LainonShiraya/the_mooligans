@@ -35,12 +35,21 @@ export const TicketInfo: React.FC = () => {
             <p className={styles.bodyText}>{t.tickets.ticketInfo.desc}</p>
 
             <div className={styles.buttons}>
-              <button className={styles.primary}>
-                {t.tickets.ticketInfo.button1}
-              </button>
-              <button className={styles.secondary}>
-                {t.tickets.ticketInfo.button2}
-              </button>
+              <a
+                className={`${styles.button} ${styles.primary}`}
+                href="https://discord.gg/GVkKr2Tq3j"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t.hero.buttonJoin}
+              </a>
+
+              <a
+                className={`${styles.button} ${styles.secondary}`}
+                href="#events"
+              >
+                {t.hero.buttonEvents}
+              </a>
             </div>
           </div>
 
