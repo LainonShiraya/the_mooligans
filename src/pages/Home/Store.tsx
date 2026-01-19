@@ -11,7 +11,7 @@ export const Store: React.FC = () => {
     getStoreItems().then(setItems);
   }, []);
 
-  return (
+  return items.length > 1 ? (
     <section className={styles.mission} id="store">
       <h1 className={styles.text}>{t.store.title}</h1>
       <p className={styles.lead}>{t.store.subtitle}</p>
@@ -27,7 +27,7 @@ export const Store: React.FC = () => {
             <p>{item.price}€</p>
             <a
               className={`${styles.button} ${styles.primary}`}
-              href="https://discord.gg/P2DSgVGu"
+              href={item.paymentUrl}
               target="_blank"
               rel="noreferrer"
             >
@@ -37,5 +37,5 @@ export const Store: React.FC = () => {
         </div>
       ))}
     </section>
-  );
+  ) : null;
 };
