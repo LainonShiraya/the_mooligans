@@ -16,21 +16,21 @@ const organizers: Person[] = [
     city: "Warszawa",
     desc: "Deck builder, turbo fanatic and Phyrexian santa",
     photo: "/assets/Tos/Tomi.png",
-    facebook: "#facebook",
+    facebook: "https://www.facebook.com/LachoSkable",
   },
   {
     name: "Grzes Ter",
     city: "Kraków",
     desc: "Deck builder and community organizer",
     photo: "/assets/Tos/Grzester.png",
-    facebook: "#facebook",
+    facebook: "https://www.facebook.com/profile.php?id=1004320534",
   },
   {
     name: "Łukasz Faliszewski",
     city: "Poznań",
     desc: "Deck builder and community organizer",
     photo: "/assets/Tos/Fali.png",
-    facebook: "#facebook",
+    facebook: "https://www.facebook.com/profile.php?id=100001359906527",
   },
 ];
 const PhotoGrid: React.FC = () => {
