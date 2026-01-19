@@ -15,7 +15,7 @@
   }
   padding: 3rem 5rem;
   background-size: cover;      /* fill container */
-  background-position: top;    /* anchor to top */
+  background-position: center;    /* anchor to top */
   background-repeat: no-repeat;
   background-position: center 3rem;
 }
@@ -133,4 +133,10 @@
   top: 250px;
   left: 50px;
   transform: rotate(-3deg);
+}
+
+.backgroundImage{
+  background-size: cover;      /* fill container */
+  background-repeat: no-repeat;
+  background-position: center 3rem;
 }
