@@ -34,7 +34,7 @@ export const en = {
     p3: "We believe that competitive play can be social, friendly and welcoming.",
     p4:`"One's ability to play the game shouldn't be measured by his ability to buy the cards, rather the skill and experience they are bringing to the table."`,
     p5: "Although Foiled out decks shuffle better ;)",
-    org1desc: "Deck builder and community organizer",
+    org1desc: "Deck builder, turbo fanatic and Phyrexian santa",
      org2desc: "Deck builder and community organizer",
       org3desc: "Deck builder and community organizer",
       buttonText: "Contact on Facebook",

@@ -14,7 +14,7 @@ const organizers: Person[] = [
   {
     name: "Tomi Lachowski",
     city: "Warszawa",
-    desc: "Deck builder and community organizer",
+    desc: "Deck builder, turbo fanatic and Phyrexian santa",
     photo: "/assets/Tos/Tomi.png",
     facebook: "#facebook",
   },

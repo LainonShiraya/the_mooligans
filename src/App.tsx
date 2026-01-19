@@ -1,5 +1,10 @@
+import { LanguageProvider } from "./i18n/LanguageContext";
 import Home from "./pages/Home/Home";
 
 export default function App() {
-  return <Home />;
+  return (
+    <LanguageProvider>
+      <Home />
+    </LanguageProvider>
+  );
 }

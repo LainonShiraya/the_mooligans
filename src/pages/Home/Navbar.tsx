@@ -1,19 +1,17 @@
 import { useState } from "react";
 import styles from "./Navbar.module.scss";
 import { useTranslation } from "../../i18n/useTranslation";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 type Language = "pl" | "en";
 
 export const Navbar: React.FC = () => {
-  const [lang, setLang] = useState<Language>(
-    (localStorage.getItem("the_mooligans_lang") as Language) || "pl",
-  );
-  const [menuOpen, setMenuOpen] = useState(false);
+  const { lang, setLang } = useLanguage();
   const { t } = useTranslation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLanguageChange = (newLang: Language) => {
     setLang(newLang);
-    localStorage.setItem("the_mooligans_lang", newLang);
   };
 
   const handleScrollTo = (
