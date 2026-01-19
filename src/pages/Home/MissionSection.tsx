@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "./MissionSection.module.scss";
+import { useTranslation } from "../../i18n/useTranslation";
 
 export const MissionSection: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.mission}>
-      <p className={styles.text}>
-        Our mission is to grow Polish cEDH scene by byilding a competitive,
-        welcoming community and running tournaments across Warsaw, Kraków and
-        Poznań.
-      </p>
+      <p className={styles.text}>{t.hero.mission}</p>
     </section>
   );
 };

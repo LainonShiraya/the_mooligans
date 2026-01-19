@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import { MissionSection } from "./MissionSection";
 import { getHeroBackground } from "../../services/siteVisuals";
+import { useTranslation } from "../../i18n/useTranslation";
 
 const Hero: React.FC = () => {
   const [bg, setBg] = useState<string | null>(null);
-
+  const { t } = useTranslation();
   useEffect(() => {
     getHeroBackground().then(setBg);
   }, []);
@@ -21,7 +22,7 @@ const Hero: React.FC = () => {
     >
       <div className={styles.hero}>
         <div className={styles.left}>
-          <h1 className={styles.title}>Polish cEDH HUB</h1>
+          <h1 className={styles.title}>{t.hero.title}</h1>
           <span>
             {" "}
             by{" "}
@@ -31,9 +32,7 @@ const Hero: React.FC = () => {
               width="168px"
             />{" "}
           </span>
-          <p className={styles.subtitle}>
-            Competitive EDH tournaments across Poland
-          </p>
+          <p className={styles.subtitle}>{t.hero.subtitle}</p>
 
           <div className={styles.buttons}>
             <a
@@ -42,31 +41,17 @@ const Hero: React.FC = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Join Discord
+              {t.hero.buttonJoin}
             </a>
 
             <a
               className={`${styles.button} ${styles.secondary}`}
               href="#events"
             >
-              Upcoming Events
+              {t.hero.buttonEvents}
             </a>
           </div>
         </div>
-
-        {/* <div className={styles.right}>
-          <div className={`${styles.polaroid} ${styles.one}`}>
-            <img src="/assets/photo_1.jpg" alt="polaroid 1" />
-          </div>
-
-          <div className={`${styles.polaroid} ${styles.two}`}>
-            <img src="/assets/photo_2.jpg" alt="polaroid 2" />
-          </div>
-
-          <div className={`${styles.polaroid} ${styles.three}`}>
-            <img src="/assets/photo_3.jpg" alt="polaroid 3" />
-          </div>
-        </div> */}
       </div>
       <MissionSection />
     </div>

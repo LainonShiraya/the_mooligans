@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./RulesPage.module.scss";
+import { useTranslation } from "../../i18n/useTranslation";
 
 interface RuleCardProps {
   title: string;
@@ -27,96 +28,58 @@ const RuleCard: React.FC<RuleCardProps> = ({ title, subtitle, children }) => {
 };
 
 export const RulesPage: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.wrapper} id="rules">
       <div className={styles.container}>
-        <h1 className={styles.title}>Rules</h1>
-        <p className={styles.lead}>
-          Official tournament rules and guidelines for cEDH events in Poland.
-          These rules are applicable to all cEDH European Championship Qualifier
-          events across Europe.
-        </p>
+        <h1 className={styles.title}>{t.rules.title}</h1>
+        <p className={styles.lead}>{t.rules.subtitle}</p>
 
         <div className={styles.warning}>
-          <strong>⚠ Warning:</strong> This is an unofficial rules document
-          written by independent judges. This is not official Wizards of the
-          Coast documentation.
+          <strong>⚠ Warning:</strong> {t.rules.warning}
         </div>
 
         <div className={styles.cards}>
           <RuleCard
-            title="Tournament Structure & Time Rules"
-            subtitle="Number of rounds, time limits and play policy"
+            title={t.rules.rule1.title}
+            subtitle={t.rules.rule1.subtitle}
           >
-            <p>
-              Events are typically run using Swiss rounds followed by a top cut
-              (4/8/10/16), depending on event size. Round pairings are random
-              and based on points earned during the event.
-            </p>
+            <p>{t.rules.rule1.text1}</p>
 
             <ul>
-              <li>Standard round time: 75 minutes</li>
-              <li>Chess clocks may be used at organizer discretion</li>
-              <li>Intentional draws may be restricted depending on format</li>
-              <li>
-                Slow play is penalized — players must maintain reasonable pace
-              </li>
-              <li>
-                Judge calls may result in time extensions or warnings as needed
-              </li>
+              <li>{t.rules.rule1.p1}</li>
+              <li>{t.rules.rule1.p2}</li>
+              <li>{t.rules.rule1.p3}</li>
+              <li>{t.rules.rule1.p4}</li>
+              <li>{t.rules.rule1.p5}</li>
             </ul>
 
-            <p>
-              Additional rules on turn order, extra turns and end-of-round
-              procedures follow Competitive REL guidance with the Multiplayer
-              Addendum guidance which can be found here.
-            </p>
+            <p>{t.rules.rule1.text2}</p>
           </RuleCard>
 
           <RuleCard
-            title="Proxy Policy"
-            subtitle="Use of printed or altered cards in tournaments"
+            title={t.rules.rule2.title}
+            subtitle={t.rules.rule2.subtitle}
           >
-            <p>
-              Proxies are allowed at most cEDH Poland events unless otherwise
-              specified. Card representations must be clear, legible and
-              unambiguous to all players and judges.
-            </p>
+            <p>{t.rules.rule2.text2}</p>
 
             <ul>
-              <li>High-quality printed proxies are strongly preferred</li>
-              <li>
-                All proxies must represent a single, specific tournament-legal
-                card
-              </li>
-              <li>Deck lists must still be submitted accurately</li>
-              <li>
-                Proxies cannot be used to intentionally mark cards or gain
-                mechanical advantage
-              </li>
+              <li>{t.rules.rule2.p1}</li>
+              <li>{t.rules.rule2.p2}</li>
+              <li>{t.rules.rule2.p3}</li>
+              <li>{t.rules.rule2.p4}</li>
             </ul>
 
-            <p>
-              If a player is unsure about the legality of their deck, please
-              reach out to one of the judges or TOs before the tournament for a
-              quick deck check.
-            </p>
+            <p>{t.rules.rule2.text2}</p>
           </RuleCard>
 
           <RuleCard
-            title="Additional Tournament Policies"
-            subtitle="Code of conduct, penalties and appeals"
+            title={t.rules.rule3.title}
+            subtitle={t.rules.rule3.subtitle}
           >
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              condimentum, erat at interdum feugiat, ipsum nibh tristique arcu,
-              vitae tempor libero magna vitae augue.
-            </p>
-
-            <p>
-              Donec aliquet, augue in vehicula cursus, lorem sem fermentum leo,
-              eget vulputate dui dui eu nibh. In hac habitasse platea dictumst.
-            </p>
+            <a href=" https://juizes-mtg-portugal.github.io/">
+              Rules: {t.rules.rule3.text1}
+            </a>
           </RuleCard>
         </div>
       </div>

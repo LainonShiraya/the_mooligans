@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import TournamentCard from "./TournamentCard";
 import styles from "./TournamentGrid.module.scss";
 import { getTournaments } from "../../services/tournaments";
+import { useTranslation } from "../../i18n/useTranslation";
 type Tournament = {
   id: string;
   title: string;
@@ -21,6 +22,8 @@ type Props2 = {
   ticketOnly: boolean;
   onCityChange: (city: string) => void;
   onTicketToggle: () => void;
+  defaultCity: string;
+  buttonText: string;
 };
 
 export const TournamentFilters = ({
@@ -29,6 +32,8 @@ export const TournamentFilters = ({
   ticketOnly,
   onCityChange,
   onTicketToggle,
+  defaultCity,
+  buttonText,
 }: Props2) => {
   return (
     <div className={styles.filters}>
@@ -37,7 +42,7 @@ export const TournamentFilters = ({
         onChange={(e) => onCityChange(e.target.value)}
         className={styles.citySelect}
       >
-        <option value="all">All Cities</option>
+        <option value="all">{defaultCity}</option>
         {cities.map((c) => (
           <option key={c} value={c}>
             {c}
@@ -49,7 +54,7 @@ export const TournamentFilters = ({
         onClick={onTicketToggle}
         className={`${styles.ticketButton} ${ticketOnly ? styles.active : ""}`}
       >
-        🎟 &nbsp;Ticket Events
+        🎟 &nbsp; {buttonText}
       </button>
     </div>
   );
@@ -57,6 +62,7 @@ export const TournamentFilters = ({
 const TournamentGrid = () => {
   const [tournaments, setTournaments] = useState<Tournament[]>([]);
   const [loading, setLoading] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     getTournaments()
@@ -76,12 +82,9 @@ const TournamentGrid = () => {
 
   if (loading) return <p>Loading tournaments...</p>;
   return (
-    <section className={styles.wrapper} id="#events">
-      <h1 className={styles.title}>Upcoming Tournaments</h1>
-      <p className={styles.lead}>
-        Competitive EDH events across Poland. Battle for tickets, prizes, and
-        leaderboard glory.
-      </p>
+    <section className={styles.wrapper} id="events">
+      <h1 className={styles.title}>{t.tournaments.title}</h1>
+      <p className={styles.lead}>{t.tournaments.subtitle}</p>
       <div className={styles.filters}>
         <TournamentFilters
           city={city}
@@ -89,6 +92,8 @@ const TournamentGrid = () => {
           ticketOnly={ticketOnly}
           onCityChange={setCity}
           onTicketToggle={() => setTicketOnly((v) => !v)}
+          buttonText={t.tournaments.ticketEvents}
+          defaultCity={t.tournaments.cities}
         />
       </div>
       <div className={styles.grid}>

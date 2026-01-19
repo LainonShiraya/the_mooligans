@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AboutUs.module.scss";
+import { useTranslation } from "../../i18n/useTranslation";
 
 interface Person {
   name: string;
@@ -33,6 +34,7 @@ const organizers: Person[] = [
   },
 ];
 const PhotoGrid: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.grid}>
       {organizers.map((o, i) => (
@@ -52,7 +54,7 @@ const PhotoGrid: React.FC = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Contact on Facebook
+              {t.tournamentOrganizers.buttonText}
             </a>
           </div>
         </div>
@@ -61,51 +63,23 @@ const PhotoGrid: React.FC = () => {
   );
 };
 export const AboutUs: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.aboutWrapper} id="about">
       <div className={styles.about}>
         <div className={styles.left}>
-          <h2 className={styles.title}>Meet tournament organizers</h2>
+          <h2 className={styles.title}>{t.tournamentOrganizers.title}</h2>
 
-          <p className={styles.subtitle}>
-            We are a group of Magic: The Gathering enthusiasts that have been
-            involved in the competitive scene since early 2000'.
-          </p>
+          <p className={styles.subtitle}>{t.tournamentOrganizers.subtitle}</p>
 
           <div className={styles.textBlock}>
-            <p>
-              With raising popularity of Competitive Commander format among
-              local playgroups we decided to unify Polish community and create
-              inclusive and high-quality tournament scene in Poland.
-            </p>
-            <p>
-              Our events are regularly held in Warsaw, Kraków and Poznań,
-              supporting LGS's and increasing awareness of the format in broader
-              M:TG community.
-            </p>
-            <p>
-              We believe that competitive play can be social, friendly and
-              welcoming.
-            </p>
-            <p>
-              "One's ability to play the game shouldn't be measured by his
-              ability to buy the cards, rather the skill and experience they are
-              bringing to the table"
-            </p>
-            <p>Although Foiled out decks shuffle better ;)</p>
+            <p>{t.tournamentOrganizers.p1}</p>
+            <p>{t.tournamentOrganizers.p2}</p>
+            <p>{t.tournamentOrganizers.p3}</p>
+            <p>{t.tournamentOrganizers.p4}</p>
+            <p>{t.tournamentOrganizers.p5}</p>
           </div>
         </div>
-        {/* <div className={styles.right}>
-          <div className={`${styles.polaroid} ${styles.one}`}>
-            <img src="/assets/photo_1.jpg" alt="Players at tournament" />
-          </div>
-          <div className={`${styles.polaroid} ${styles.two}`}>
-            <img src="/assets/photo_1.jpg" alt="Cards on table" />
-          </div>
-          <div className={`${styles.polaroid} ${styles.three}`}>
-            <img src="/assets/photo_1.jpg" alt="Event room" />
-          </div>
-        </div> */}
       </div>
       <PhotoGrid />
     </section>

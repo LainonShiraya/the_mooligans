@@ -6,7 +6,7 @@ type Language = "pl" | "en";
 
 export const Navbar: React.FC = () => {
   const [lang, setLang] = useState<Language>(
-    (localStorage.getItem("the_mooligans_lang") as Language) || "pl"
+    (localStorage.getItem("the_mooligans_lang") as Language) || "pl",
   );
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
 
   const handleScrollTo = (
     id: string,
-    e?: React.MouseEvent<HTMLAnchorElement>
+    e?: React.MouseEvent<HTMLAnchorElement>,
   ) => {
     e?.preventDefault();
     setMenuOpen(false);
@@ -77,7 +77,7 @@ export const Navbar: React.FC = () => {
 
           <div className={styles.ButtonWrapper}>
             <a href="#patreon" className={styles.supportButton}>
-              Support Us
+              {t.navbar.support}
             </a>
             <a
               href="https://www.cedheurope.com"
@@ -134,7 +134,7 @@ export const Navbar: React.FC = () => {
 
           <div className={styles.mobileButtons}>
             <a href="#patreon" className={styles.supportButton}>
-              Support Us
+              {t.navbar.support}
             </a>
             <a
               href="https://www.cedheurope.com"

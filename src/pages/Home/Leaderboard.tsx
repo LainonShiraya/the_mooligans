@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Leaderboard.module.scss";
+import { useTranslation } from "../../i18n/useTranslation";
 
 interface PlayerRow {
   nickname: string;
@@ -105,13 +106,11 @@ const mockPlayers: PlayerRow[] = [
 ];
 
 export const Leaderboard: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="leaderboard" className={styles.leaderboardSection}>
-      <h1>Season Leaderboard</h1>
-      <p className={styles.lead}>
-        Tracking player performance across EU Championship Qualifier tournaments
-        in Poland
-      </p>
+      <h1>{t.leaderboard.title}</h1>
+      <p className={styles.lead}>{t.leaderboard.subtitle}</p>
 
       <div className={styles.tableWrapper}>
         <div className={styles.tableInner}>
@@ -142,28 +141,23 @@ export const Leaderboard: React.FC = () => {
             </tbody>
           </table>
         </div>
-        <div className={styles.underDevOverlay}>Feature under development</div>
+        <div className={styles.underDevOverlay}>
+          {t.leaderboard.development}
+        </div>
       </div>
       <div className={styles.explaination}>
-        <h2>How it Works</h2>
+        <h2>{t.leaderboard.rules.title}</h2>
         <ul className={styles.list}>
-          <li>
-            The leaderboard will allow players to compete for a qualification
-            ticket. Tickets will be awarded to the top ranked player, who
-            currently does not possess one.
-          </li>
-          <li>
-            The overall leaderboard winner, will receive an additional price
-            (TBA)
-          </li>
-          <li>
-            The full scoring system and leaderboard structure will be announced
-            in the near future.
-          </li>
-          <li>Season winner will receive an exclusive commemorative token.</li>
+          <li>{t.leaderboard.rules.p1}</li>
+          <li>{t.leaderboard.rules.p2}</li>
+          <li>{t.leaderboard.rules.p3}</li>
+          <li>{t.leaderboard.rules.p4}</li>{" "}
           <li>
             {" "}
-            <b>Tickets cannot be sold or transferred.</b>
+            <b>
+              {" "}
+              <li>{t.leaderboard.rules.p5}</li>
+            </b>
           </li>
         </ul>
       </div>
