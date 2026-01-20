@@ -4,7 +4,7 @@ top: 0;
 left: 0;
 width: 100%;
 backdrop-filter: blur(10px);
-background: rgba(5, 7, 12, 0.85);
+background: rgba(5, 7, 12, 0.25);
 z-index: 200;
 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -75,10 +75,11 @@ border-radius: 16px;
 font-weight: 700;
 text-decoration: none;
 box-shadow: 0 8px 25px rgba(120, 70, 200, 0.35);
-background: #b11226;
+background: #6672FF;
 color: white;
+transition: 0.2s ease-in-out;
   &:hover {
-    background: #d01a32;
+    background: #66D3FF;
   }
 }
 

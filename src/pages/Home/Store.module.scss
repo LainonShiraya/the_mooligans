@@ -70,13 +70,13 @@
 }
 
 .primary {
-  background: #b11226;
-  color: white;
-
-  &:hover {
-    background: #d01a32;
+  background: #6672FF;
+  color: #111;
+  &:hover{
+    background: #66D3FF;
   }
 }
+
 .lead {
   text-align: center;
   max-width: 800px;

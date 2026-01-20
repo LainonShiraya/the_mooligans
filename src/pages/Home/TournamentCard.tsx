@@ -45,7 +45,7 @@ const TournamentCard = ({ tournament }: Props) => {
           </a>
 
           <div className={styles.actions}>
-            {tournament.ticketsUrl ? (
+            {tournament.hasTicket ? (
               <a
                 className={`${styles.button} ${styles.primary}`}
                 href={tournament.ticketsUrl}
@@ -56,7 +56,7 @@ const TournamentCard = ({ tournament }: Props) => {
               </a>
             ) : (
               <button
-                className={`${styles.button} ${styles.primary} ${styles.red}`}
+                className={`${styles.button} ${styles.primary} ${styles.noTicket}`}
               >
                 Tickets
               </button>

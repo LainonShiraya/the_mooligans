@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Rinter";
+  letter-spacing: 0.5px;
   background: #f6f6f6;
 }
 
@@ -12,8 +13,15 @@ a {
 }
 
 @font-face {
-  font-family: "Norwester";
-  src: url("/assets/fonts/TropicalHorizon.otf") format("opentype");
+  font-family: "Rinter";
+  src: url("/assets/fonts/Rinter.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Affigere";
+  src: url("/assets/fonts/Affigere.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -38,4 +46,3 @@ h1,h2,h3,h4,h5{
   color:white;
 }
 
-    // font-family: 'UnifrakturCook', cursive; // your gothic / MTG vibe

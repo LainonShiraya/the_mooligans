@@ -16,8 +16,8 @@ const Hero: React.FC = () => {
       className={styles.backgroundImage}
       style={{
         backgroundImage: bg
-          ? `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(${bg})`
-          : `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))`,
+          ? `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),url(${bg})`
+          : `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.65))`,
       }}
     >
       <div className={styles.hero}>
@@ -32,8 +32,6 @@ const Hero: React.FC = () => {
               width="168px"
             />{" "}
           </span>
-          <p className={styles.subtitle}>{t.hero.subtitle}</p>
-
           <div className={styles.buttons}>
             <a
               className={`${styles.button} ${styles.primary}`}

@@ -69,16 +69,15 @@
 }
 
 .primary {
-  background: #a30808;
+    background: #6672FF;
+  color: #fff;
   border: none;
   padding: 0.7rem 1.4rem;
   border-radius: 8px;
   cursor: pointer;
-  color: white;
   font-weight: 600;
-
-  &:hover {
-    background: #c00d0d;
+  &:hover{
+    background: #66D3FF;
   }
 }
 

@@ -14,11 +14,12 @@
   }
   h2{
     color:white;
+    margin-bottom: 0.5rem;
   }
 }
 
 .image {
-  height: 340px;
+  height: 320px;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -114,4 +115,13 @@ button.button:disabled {
   padding: 0.3rem 0.6rem;
   border-radius: 0.5rem;
   font-size: 0.75rem;
+}
+
+.noTicket{
+  background: #6672FF;
+  color: #111;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    background: #66D3FF;
+  }
 }

@@ -9,7 +9,7 @@ export const pl = {
     support: "Wesprzyj Nas",
   },
   hero: {
-    title: "cEDH Polska",
+    title: "cEDH POLSKA",
     subtitle: "Turnieje Competitive EDH w całej Polsce",
     buttonJoin: "Dołącz do Discorda",
     buttonEvents: "Nadchodzące wydarzenia",
@@ -32,13 +32,13 @@ export const pl = {
   tournamentOrganizers: {
     title: "Poznaj organizatorów turniejów",
     subtitle:
-      "Jesteśmy grupą entuzjastów Magic: The Gathering, którzy są zaangażowani w scenę turniejową od początku lat 2000.",
+      "Jesteśmy grupą entuzjastów Magic: The Gathering, którzy są zaangażowani w scenę turniejową od początku lat 2019.",
     p1:
       "Wraz ze wzrostem popularności formatu Competitive Commander w lokalnych grupach postanowiliśmy zjednoczyć polską społeczność i stworzyć inkluzywną oraz wysokiej jakości scenę turniejową w Polsce.",
     p2:
-      "Nasze wydarzenia są regularnie organizowane w Warszawie, Krakowie i Poznaniu, wspierając lokalne sklepy LGS oraz zwiększając świadomość formatu w szerszej społeczności M:TG.",
+      "Nasze wydarzenia są regularnie organizowane w Warszawie, Krakowie i Poznaniu, wspierając lokalne sklepy LGS oraz zwiększając świadomość formatu w szerszej społeczności MTG.",
     p3:
-      "Wierzymy, że gra konkurencyjna może być jednocześnie społeczna, przyjazna i otwarta.",
+      "Wierzymy, że gra kompetetywna może być jednocześnie przyjazna i otwarta.",
     p4:
       `"Umiejętność gry nie powinna być mierzona zdolnością do kupowania kart, lecz umiejętnościami i doświadczeniem, które gracz wnosi do stołu."`,
     p5: "Chociaż talie w full foilu tasują się lepiej ;)",
@@ -60,7 +60,7 @@ export const pl = {
       card2: {
         title: "Leaderboard",
         subtitle:
-          "Regularność ma znaczenie — zdobądź bilet, utrzymując się na szczycie oficjalnego rankingu cEDH Poland na koniec sezonu.",
+          "Regularność ma znaczenie - zdobądź bilet, utrzymując się na szczycie oficjalnego rankingu cEDH Poland na koniec sezonu.",
       },
       card3: {
         title: "Każde zwycięstwo się liczy",
@@ -73,9 +73,9 @@ export const pl = {
     rule1:
       "Sezon 2026/2027 będzie obejmował minimum 10 turniejów kwalifikacyjnych*",
     rule2:
-      "Każdy turniej przyznaje minimum 1 bilet mistrzowski zwycięzcy.",
+      "Każdy turniej przyznaje minimum 1 bilet invitational zwycięzcy.",
     rule3:
-      "Jeśli zwycięzca posiada już bilet, możliwość jego zakupu przechodzi na kolejną osobę z najwyższym wynikiem.",
+      "Jeśli zwycięzca posiada już bilet, możliwość jego zdobycia przechodzi na kolejną osobę z najwyższym wynikiem w turnieju.",
     rule4:
       "Zwycięzcy, oprócz otrzymania biletu, zdobywają ekskluzywny pamiątkowy token.",
     rule5:
@@ -99,14 +99,14 @@ export const pl = {
       subtitle: "Liczba rund, limity czasu i polityka gry",
       text1:
         "Wydarzenia są zazwyczaj rozgrywane w systemie szwajcarskim z top cutem (4/8/10/16), w zależności od wielkości turnieju. Pary rund są losowe i oparte na punktach zdobytych podczas wydarzenia.",
-      p1: "Standardowy czas rundy: 75 minut",
-      p2: "Zegary szachowe mogą być używane według uznania organizatora",
+      p1: "Standardowy czas rundy: 75 minut.",
+      p2: "Po skończonym czasie rundy, aktywny gracz ma 15 minut czasu dodatkowego.",
       p3:
-        "Celowe remisy mogą być ograniczone w zależności od formatu",
+        "Dodatkową karą za slow play jest zakaz uczestniczenia w politycznych dyskusjach do końca meczu.",
       p4:
-        "Gra powolna jest karana — gracze muszą utrzymywać rozsądne tempo",
+        "Gra powolna jest karana — gracze muszą utrzymywać rozsądne tempo.",
       p5:
-        "Wezwania sędziego mogą skutkować przedłużeniem czasu lub ostrzeżeniami",
+        "Wezwania sędziego mogą skutkować przedłużeniem czasu lub ostrzeżeniami.",
       text2:
         "Dodatkowe zasady dotyczące kolejności tur, dodatkowych tur oraz procedur końca rundy są zgodne z wytycznymi Competitive REL wraz z dodatkiem Multiplayer Addendum, który można znaleźć tutaj.",
     },
@@ -119,9 +119,8 @@ export const pl = {
       p2:
         "Każde proxy musi reprezentować jedną, konkretną kartę dopuszczoną do gry turniejowej",
       p3:
-        "Listy talii muszą być nadal składane w sposób dokładny",
-      p4:
-        "Proxy nie mogą być używane do oznaczania kart ani uzyskiwania przewagi mechanicznej",
+        "Proxy nie mogą być używane do oznaczania kart ani uzyskiwania przewagi.",
+        p4:"Proxy wydrukowane na zwykłym papierze muszą być zasleevowane w inner sleevy i przejść deck check.",
       text2:
         "Jeśli gracz nie jest pewien legalności swojej talii, prosimy o kontakt z jednym z sędziów lub organizatorów przed turniejem w celu szybkiego sprawdzenia talii.",
     },
@@ -141,7 +140,7 @@ export const pl = {
     rules: {
       title: "Jak to działa",
       p1:
-        "Ranking umożliwi graczom rywalizację o bilet kwalifikacyjny. Bilety będą przyznawane najwyżej sklasyfikowanemu graczowi, który aktualnie go nie posiada.",
+        "Ranking umożliwi graczom rywalizację o bilet invitational. Bilety będą przyznawane najwyżej sklasyfikowanemu graczowi, który aktualnie go nie posiada.",
       p2:
         "Zwycięzca rankingu generalnego otrzyma dodatkową nagrodę (TBA).",
       p3:

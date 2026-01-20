@@ -78,7 +78,7 @@ export const RulesPage: React.FC = () => {
             subtitle={t.rules.rule3.subtitle}
           >
             <a href=" https://juizes-mtg-portugal.github.io/">
-              Rules: {t.rules.rule3.text1}
+              {t.rules.rule3.text1}
             </a>
           </RuleCard>
         </div>

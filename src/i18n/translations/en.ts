@@ -9,7 +9,7 @@ export const en = {
     support: "Support Us",
   },
   hero: {
-    title: "cEDH Poland",
+    title: "cEDH POLAND",
     subtitle:"Competitive EDH tournaments across Poland",
     buttonJoin: "Join Discord",
     buttonEvents: "Upcoming Events",
@@ -75,21 +75,21 @@ rule1: {
   title: "Tournament Structure & Time Rules",
   subtitle: "Number of rounds, time limits and play policy",
   text1: "Events are typically run using Swiss rounds followed by a top cut (4/8/10/16), depending on event size. Round pairings are random and based on points earned during the event.",
-  p1: "Standard round time: 75 minutes",
-  p2:"Chess clocks may be used at organizer discretion",
-  p3:"Intentional draws may be restricted depending on format",
-  p4:"Slow play is penalized — players must maintain reasonable pace",
-  p5:"Judge calls may result in time extensions or warnings as needed",
-  text2:"Additional rules on turn order, extra turns and end-of-round procedures follow Competitive REL guidance with the Multiplayer Addendum guidance which can be found here."
+  p1: "Standard round time: 75 minutes.",
+  p2:"After the time is finished, active player will have 15 minutes to finish it's round.",
+  p3:"The additional penalty for slow play is to forbid players from participating in political discussions for the remainder of the Match.",
+  p4:"Slow play is penalized — players must maintain reasonable pace.",
+  p5:"Judge calls may result in time extensions or warnings as needed.",
+  text2:"Additional rules on turn order, extra turns and end-of-round procedures follow Competitive REL guidance with the Multiplayer Addendum guidance which can be found below."
 },
 rule2: {
   title: "Proxy Policy",
-  subtitle: "Use of printed or altered cards in tournaments",
+  subtitle: "Use of printed or altered cards in tournaments.",
   text1: "Proxies are allowed at most cEDH Poland events unless otherwise specified. Card representations must be clear, legible and unambiguous to all players and judges.",
-  p1: "High-quality printed proxies are strongly preferred",
-  p2:"All proxies must represent a single, specific tournament-legal card",
-  p3:"Deck lists must still be submitted accurately",
-  p4:"Proxies cannot be used to intentionally mark cards or gain mechanical advantage",
+  p1: "High-quality printed proxies are strongly preferred.",
+  p2:"All proxies must represent a single, specific tournament-legal card.",
+  p3:"Proxies cannot be used to intentionally mark cards or gain advantage.",
+  p4:"Proxies printed on regular paper must be sleeved in inner sleeves and pass the deck check.",
   text2:"If a player is unsure about the legality of their deck, please reach out to one of the judges or TOs before the tournament for a quick deck check."
 },
 rule3: {
@@ -104,7 +104,7 @@ subtitle: "Tracking player performance across EU Championship Qualifier tourname
 development: "Feature under development",
 rules: {
   title: "How it Works",
-  p1: "The leaderboard will allow players to compete for a qualification ticket. Tickets will be awarded to the top ranked player, who currently does not possess one.",
+  p1: "The leaderboard will allow players to compete for a qualifier ticket. Tickets will be awarded to the top ranked player, who currently does not possess one.",
   p2:"The overall leaderboard winner, will receive an additional price (TBA).",
   p3:"The full scoring system and leaderboard structure will be announced in the near future.",
   p4: "Season winner will receive an exclusive commemorative token.",

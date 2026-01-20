@@ -1,5 +1,5 @@
 .hero {
-  min-height: 83vh;
+  min-height: 84vh;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -34,12 +34,12 @@
 }
 
 .title {
-  font-size: 3.6rem;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
+  letter-spacing: 3px;
+  margin-bottom: 0rem;
   text-align: center;
-  font-size:5rem;
-  font-weight:bold;
+  font-size: clamp(3rem, 10vw, 12rem);
+  font-weight: 600;
+  font-family: 'Affigere';
 }
 
 .subtitle {
@@ -49,12 +49,14 @@
 }
 
 .buttons {
+  margin-top:2rem;
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
 
-  @media (max-width: 900px) {
+  @media (max-width: 700px) {
     justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -72,11 +74,10 @@
 }
 
 .primary {
-  background: #b11226;
-  color: white;
-
-  &:hover {
-    background: #d01a32;
+  background: #6672FF;
+  color: #fff;
+  &:hover{
+    background: #66D3FF;
   }
 }
 
