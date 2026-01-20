@@ -11,7 +11,7 @@ export const Store: React.FC = () => {
     getStoreItems().then(setItems);
   }, []);
 
-  return items.length > 1 ? (
+  return items.length > 0 ? (
     <section className={styles.mission} id="store">
       <h1 className={styles.text}>{t.store.title}</h1>
       <p className={styles.lead}>{t.store.subtitle}</p>

@@ -44,7 +44,7 @@ export const Navbar: React.FC = () => {
             setMenuOpen(false);
           }}
         >
-          <h4>cEDH Poland</h4>
+          <h4>{t.hero.title}</h4>
         </div>
 
         {/* Desktop nav */}
