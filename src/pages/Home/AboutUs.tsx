@@ -14,7 +14,7 @@ const organizers: Person[] = [
   {
     name: "Tomi Lachowski",
     city: "Warszawa",
-    desc: "Deck builder, turbo fanatic and Phyrexian santa",
+    desc: "Deck builder and a turbo fanatic",
     photo: "/assets/Tos/Tomi.png",
     facebook: "https://www.facebook.com/LachoSkable",
   },
@@ -76,8 +76,6 @@ export const AboutUs: React.FC = () => {
             <p>{t.tournamentOrganizers.p1}</p>
             <p>{t.tournamentOrganizers.p2}</p>
             <p>{t.tournamentOrganizers.p3}</p>
-            <p>{t.tournamentOrganizers.p4}</p>
-            <p>{t.tournamentOrganizers.p5}</p>
           </div>
         </div>
       </div>

@@ -9,19 +9,19 @@ export const pl = {
     support: "Wesprzyj Nas",
   },
   hero: {
-title: "Polski HUB cEDH",
+    title: "cEDH Polska",
     subtitle: "Turnieje Competitive EDH w całej Polsce",
     buttonJoin: "Dołącz do Discorda",
     buttonEvents: "Nadchodzące wydarzenia",
     mission:
-      "Naszą misją jest rozwój polskiej sceny cEDH poprzez budowanie konkurencyjnej, otwartej społeczności oraz organizację turniejów w Warszawie, Krakowie i Poznaniu.",
+      "Naszą misją jest rozwój polskiej sceny cEDH poprzez budowanie kompetetywnej, otwartej społeczności oraz organizację turniejów w Warszawie, Krakowie i Poznaniu.",
   },
    tournaments: {
     title: "Nadchodzące turnieje",
     subtitle:
       "Wydarzenia Competitive EDH w całej Polsce. Walcz o bilety, nagrody i chwałę w rankingu.",
     cities: "Wszystkie miasta",
-    ticketEvents: "Turnieje biletowe",
+    ticketEvents: "Qualifiers",
   },
   store: {
     title: "Przedsprzedaż",

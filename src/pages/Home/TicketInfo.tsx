@@ -25,7 +25,6 @@ export const TicketInfo: React.FC = () => {
               <li>{t.tickets.ticketInfo.rule2}</li>
               <li>{t.tickets.ticketInfo.rule3}</li>
               <li>{t.tickets.ticketInfo.rule4}</li>
-              <li>{t.tickets.ticketInfo.rule5}</li>
               <li>
                 {t.tickets.ticketInfo.rule6}{" "}
                 <b>{t.tickets.ticketInfo.rule6Bold}</b>
